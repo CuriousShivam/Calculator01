@@ -15,6 +15,17 @@
     <script type="text/javascript"></script>
 </head>
 
+<script>
+    function hide(className) {
+    document.getElementById(className).style.top = "-100%";
+    if(className=='options'){
+        console.log('true')
+        document.getElementsByClassName('account').style.visibility = 'visible'
+    }
+}
+
+</script>
+
 <body>
     <div class="container">
         <div class="options" id="options">
@@ -23,6 +34,7 @@
             <button value="guest" onclick="hide('options')">Guest</button>
             <h5 onclick='hide("options")'>X</h5>
         </div>
+        <div class="account" onclick="document.getElementById('options').style.top=''">A</div>
 
         <div class="login" id="login">
             <form action=""><!-- Login -->

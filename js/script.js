@@ -2,9 +2,7 @@ function top0(x) {
     document.getElementById(x).style.top = "50%";
 }
 
-function hide(className) {
-    document.getElementById(className).style.top = "-1000px";
-}
+
 
 
 function eval1() {
@@ -50,7 +48,7 @@ setInterval(function myFunction() {
 }, 10); 
 
 
-document.getElementById('cbtn').onclick = console.log('hello')
+// document.getElementById('cbtn').onclick = console.log('hello')
 
 function doWork(){
 console.log(    document.getElementById('cbtn').children.children.innerHTML)
