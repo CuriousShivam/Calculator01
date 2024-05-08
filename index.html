@@ -16,75 +16,80 @@
 </head>
 
 <body>
-    <div class="options" id="options">
-        <button value="login" onclick="top0(this.value)">Login</button>
-        <button value="signup" onclick="top0(this.value)">SignUp</button>
-        <button value="guest" onclick="hide('options')">Guest</button>
-        <h5 onclick='hide("options")'>X</h5>
-    </div>
-
-    <div class="login" id="login">
-        <form action=""><!-- Login -->
-            <!-- <label for="name">Name: </label> <input type="text" id="name" name="name" /> -->
-            <label> Email: <input type="text" name="name" /> </label>
-            <label> Password: <input type="text" name="name" /> </label>
-            <button type="submit">Submit</button>
-            <h5 onclick='hide("login")'>X</h5>
-        </form>
-    </div>
-    <div class="login signup" id="signup">
-        <form action=""><!-- signup -->
-            <label> Email: <input type="text" name="name" /> </label>
-            <label> OTP: <input type="text" name="name" /> </label>
-            <button>Verify OTP</button>
-
-            <label> Set Passward: <input type="text" name="name" /> </label>
-            <button type="submit">Submit</button>
-            <h5 onclick='hide("signup")'>X</h5>
-
-
-        </form>
-    </div>
-    <div class="calculator">
-        <div>
-            <input type="text" id="enterno" onfocus="enterPressed()">
-            <button onclick="eval1()">get it</button>
+    <div class="container">
+        <div class="options" id="options">
+            <button value="login" onclick="top0(this.value)">Login</button>
+            <button value="signup" onclick="top0(this.value)">SignUp</button>
+            <button value="guest" onclick="hide('options')">Guest</button>
+            <h5 onclick='hide("options")'>X</h5>
         </div>
-        <div>
-            <div>
-                <div>AC</div>
-                <div></div>
-                <div>X</div>
-                <div>/</div>
-            </div>
+
+        <div class="login" id="login">
+            <form action=""><!-- Login -->
+                <!-- <label for="name">Name: </label> <input type="text" id="name" name="name" /> -->
+                <label> Email: <input type="text" name="name" /> </label>
+                <label> Password: <input type="text" name="name" /> </label>
+                <button type="submit">Submit</button>
+                <h5 onclick='hide("login")'>X</h5>
+            </form>
+        </div>
+        <div class="login signup" id="signup">
+            <form action="">
+                <label> Email: <input type="text" name="name" /> </label>
+                <label> OTP: <input type="text" name="name" /> </label>
+                <button>Verify OTP</button>
+
+                <label> Set Passward: <input type="text" name="name" /> </label>
+                <button type="submit">Submit</button>
+                <h5 onclick='hide("signup")'>X</h5>
 
 
+            </form>
+        </div> 
+        <div class="calculator" id="calculator">
             <div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>*</div>
+                <input type="text" id="enterno" onfocus="enterPressed()">
+                <button onclick="eval1()">Solve</button>
             </div>
-            <div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>-</div>
-            </div>
-            <div>
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>+</div>
-            </div>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div id="cbtn">
+                <div>
+                    <div onclick="console.log(innerHTML)">AC</div>
+                    <div>%</div>
+                    <div>X</div>
+                    <div>/</div>
+                </div>
+
+
+                <div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>*</div>
+                </div>
+                <div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>-</div>
+                </div>
+                <div>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>+</div>
+                </div>
+                <div>
+                    <div>00</div>
+                    <div>0</div>
+                    <div>.</div>
+                    <div>=</div>
+                </div>
             </div>
         </div>
     </div>
+
+
+    <!-- <div style="width:300px;height:300px;background-color: red;"></div> -->
 </body>
 
 </html>
