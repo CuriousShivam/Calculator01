@@ -5,8 +5,7 @@
 
 body {
     background-color: black;
-    user-select: none;
-    overflow: hidden;
+    /* user-select: none; */
 }
 
 
@@ -21,6 +20,18 @@ body {
     text-align: center;
 }
 
+.account {
+    color: white;
+    position: absolute;
+    scale: 1.5;
+    top: 20px;
+    right: 20px;
+    border: 1px solid white;
+    padding: 5px 10px;
+    display:none
+    /* visibility: hidden; */
+}
+
 .options {
     background-color: rgba(0, 0, 0);
     /* text-align: center; */
@@ -33,26 +44,18 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    transform:translate(0px, 0px)
 }
 
-.account {
-    color: white;
-    position: absolute;
-    scale: 1.5;
-    top: 40px;
-    right: 24px;
-    border: 1px solid white;
-    padding: 5px 10px;
-    visibility:hidden;
-}
+
 
 .options h5,
 .login h5 {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 5px;
     color: white;
-    padding: 10px 15px;
+    padding: 5px 8px;
     border: 1px dashed white;
     cursor: pointer
 }
@@ -69,16 +72,23 @@ body {
 }
 
 .login {
-    position: absolute;
-    height: 400px;
+
+    
+    /* text-align: center; */
     width: 250px;
-    background-color: red;
-    top: -1000px;
-    /* margin: 10% 20%; */
-    transition: .5s;
+    height: 400px;
+    
+    position: absolute;
     z-index: 1;
-    scale: 1.5;
-    transform: translate(0, -32%)
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: red;
+    transition: .5s;
+    /* top:-1000px; */
+    transform : translate(0,-1000px);
+    
 }
 
 .login>form {
@@ -91,11 +101,7 @@ body {
 
 }
 
-.login>form>label,
-.login>form>button:after {
-    /* height: 25%; */
 
-}
 
 .signup {
     background-color: white;
